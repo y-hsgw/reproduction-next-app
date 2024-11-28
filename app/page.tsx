@@ -1,4 +1,12 @@
-/** Add your relevant code here for the issue to reproduce */
+import { action } from "./action";
+
 export default function Home() {
-  return null;
+  return (
+    <div style={{ height: "50vh" }}>
+      Home
+      <form action={action}>
+        <button type="submit">go home</button>
+      </form>
+    </div>
+  );
 }
